@@ -36,10 +36,27 @@ AOS.init();
 
       btnCloseModal.addEventListener('click', closeModal);
 
-      overlay.addEventListener('click', closeModal);
+    //   overlay.addEventListener('click', closeModal);
 
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
           closeModal();
         }
       });
+
+      const contact = document.getElementById('contact');
+      const contactBtn = document.getElementById('contact-btn');
+    //   form submittion
+        contact.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const data = {
+                name,
+                email,
+                message,
+            };
+            console.log(data);
+            window.location.href = `mailto:sarang.thekkedathpr@gmail.com?subject=Message from ${name}&body=${message} contact me back at ${email}`;
+            });

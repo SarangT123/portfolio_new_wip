@@ -262,3 +262,62 @@ nav{
     left: 240px;
     z-index: 100;
   }
+
+
+#contact_me{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.724), rgba(0, 0, 0, 0.724)),url('stc.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 3vh;
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    color: white;
+}
+.f-input{
+    width: 100%;
+    height: 3rem;
+    border: white solid 5px;
+    background-color: #040404;
+    color: white;
+    font-size: 3vh;
+    border-radius: 10px;
+    transition: 0.5s;
+    /* margin-bottom: 1rem; */
+}
+.form-div label{
+    margin-bottom: 0.2rem;
+    width: 100%;
+    text-align: left;
+}
+.f-input-ml{
+    height: 30vh;
+}
+.f-submit{
+    margin-top: 1rem;
+    width: 35%;
+    height: 5rem;
+    border: white solid 5px;
+    background-color: #040404;
+    color: white;
+    font-size: 3vh;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.f-submit:hover{
+    background-color: #E39982;
+    color: #040404;
+    transition: 0.5s;
+}
+.f-submit:active{
+    background-color: #E39982;
+    color: #040404;
+    transition: 0.1s;
+}
