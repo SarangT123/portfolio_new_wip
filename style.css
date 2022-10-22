@@ -121,7 +121,7 @@ nav{
     color: white;
 }
 #interest{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('black_hole.gif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.724), rgba(0, 0, 0, 0.724)),url('black_hole.gif');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1rem 1rem 1rem 1rem;
@@ -130,4 +130,18 @@ nav{
     text-align: center;
     color: white;
 
+}
+
+
+
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+#about-p{
+    font-size: medium;
+}
+
+#interest-p{
+    font-size: medium;
+}
 }
