@@ -97,7 +97,7 @@ nav{
 
 #about{
     background-color: #040404;
-    height: 70vh;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     color: white;
@@ -114,6 +114,7 @@ nav{
 }
 #about-p{
     padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 3rem;
     font-size: 3vh;
     font-family: 'Montserrat',sans-serif;
     text-align: center;
