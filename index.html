@@ -9,6 +9,9 @@
   <title>Portfolio</title>
 </head>
 <body>
+  <div id="loading">
+    <img id="loading-image" src="loader.gif" alt="Loading..." />
+  </div>
 
   <div class="modal hidden">
     <button class="close-modal">&times;</button>
@@ -81,6 +84,8 @@
 
       const scroll = document.getElementsByTagName('body')
       window.onload = function() {
+        //hide loading
+        document.getElementById('loading').style.display = 'none';
         scroll[0].style.overflow = 'hidden';
         modal.classList.remove('hidden');
         document.getElementById('icon').scrollIntoView();
